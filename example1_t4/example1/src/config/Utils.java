@@ -32,4 +32,14 @@ public class Utils {
         }
         return names;
     }
+
+    public static String[] convertListCode(ArrayList<Student> student) {
+        String[] names = new String[student.size()];
+
+        for (Integer i = 0; i < student.size(); i++) {
+            Student item = student.get(i);
+            names[i] = item.getCi();
+        }
+        return names;
+    }
 }
